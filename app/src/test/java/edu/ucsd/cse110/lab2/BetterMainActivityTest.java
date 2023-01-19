@@ -29,8 +29,8 @@ public class BetterMainActivityTest {
             button_1.performClick();
             button_equals.performClick();
 
-            var text_displayed =activity.findViewById(R.id.display);
-            assertEquals("2", text_displayed);
+            var text_displayed = (TextView) activity.findViewById(R.id.display);
+            assertEquals("2", text_displayed.getText().toString());
         }));
 
 
