@@ -19,7 +19,7 @@ public class BetterMainActivityTest {
         var scenario = ActivityScenario.launch(MainActivity.class);
         scenario.moveToState(Lifecycle.State.CREATED);
         scenario.moveToState(Lifecycle.State.STARTED);
-
+        // button press
         scenario.onActivity((activity -> {
             var button_1 = (Button) activity.findViewById(R.id.btn_one);
             var button_plus = (Button) activity.findViewById(R.id.btn_plus);
